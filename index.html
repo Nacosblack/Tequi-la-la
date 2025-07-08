@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tequilala – Speisekarte</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #2e1f14;
+      color: #f5f5dc;
+      background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+    }
+
+    header img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    nav {
+      background-color: #4d3628;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: #f5f5dc;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #f5f5dc;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .menu-category {
+      margin-bottom: 2rem;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: #3b2a1d;
+    }
+
+    @media (max-width: 768px) {
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- ✅ Bild-URL hier einsetzen -->
+    <img src="https://i.imgur.com/fk8ZUgh.png" alt="Tequilala Logo" />
+  </header>
+
+  <nav>
+    <a href="#speisen">Speisen</a>
+    <a href="#getraenke">Getränke</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="speisen">
+    <h2>🍴 Speisen</h2>
+    <div class="menu-grid">
+      <div class="menu-category">
+        <h3>Vorspeisen / Snacks</h3>
+        <div class="menu-item"><span>Nachos</span><span>45 $</span></div>
+        <div class="menu-item"><span>Jalapeño Poppers</span><span>55 $</span></div>
+        <div class="menu-item"><span>Mozzarella-Sticks</span><span>50 $</span></div>
+      </div>
+      <div class="menu-category">
+        <h3>Hauptspeisen</h3>
+        <div class="menu-item"><span>Tacos (3er-Set: Rind, Huhn, Veggie)</span><span>80 $</span></div>
+        <div class="menu-item"><span>Burrito Bowl</span><span>90 $</span></div>
+        <div class="menu-item"><span>Fladen mit Hähnchenstreifen & Paprika</span><span>95 $</span></div>
+        <div class="menu-item"><span>Cheeseburger mit Pommes</span><span>75 $</span></div>
+      </div>
+      <div class="menu-category">
+        <h3>Desserts</h3>
+        <div class="menu-item"><span>Churros mit Zimt & Schokosauce</span><span>40 $</span></div>
+        <div class="menu-item"><span>Margarita-Sorbet</span><span>35 $</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="getraenke">
+    <h2>🍹 Getränke</h2>
+    <div class="menu-grid">
+      <div class="menu-category">
+        <h3>Alkoholfrei</h3>
+        <div class="menu-item"><span>Cola / Sprite / Fanta</span><span>15 $</span></div>
+        <div class="menu-item"><span>Hausgemachte Limonade</span><span>20 $</span></div>
+        <div class="menu-item"><span>Virgin Mojito</span><span>25 $</span></div>
+        <div class="menu-item"><span>Kaffee / Espresso</span><span>20 $</span></div>
+      </div>
+      <div class="menu-category">
+        <h3>Bier & Wein</h3>
+        <div class="menu-item"><span>Corona</span><span>25 $</span></div>
+        <div class="menu-item"><span>Hauswein (Rot / Weiß)</span><span>35 $</span></div>
+      </div>
+      <div class="menu-category">
+        <h3>Cocktails</h3>
+        <div class="menu-item"><span>Tequila Sunrise</span><span>65 $</span></div>
+        <div class="menu-item"><span>Mojito</span><span>60 $</span></div>
+        <div class="menu-item"><span>Piña Colada</span><span>65 $</span></div>
+        <div class="menu-item"><span>Whiskey Cola</span><span>70 $</span></div>
+      </div>
+      <div class="menu-category">
+        <h3>Shots</h3>
+        <div class="menu-item"><span>Tequila Shot</span><span>20 $</span></div>
+        <div class="menu-item"><span>Mexikaner</span><span>20 $</span></div>
+        <div class="menu-item"><span>Vodka Shot</span><span>20 $</span></div>
+        <div class="menu-item"><span>Sambuca Shot</span><span>20 $</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>📍 Kontakt</h2>
+    <p><strong>Ort:</strong> Eclipe Boulevard, Vinewood (Noxline City)</p>
+    <p><strong>Öffnungszeiten:</strong> Mo–Sa: 18:00 – 02:00</p>
+    <p><strong>Geschäftsführer:</strong>Noah White </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Tequilala  | Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
